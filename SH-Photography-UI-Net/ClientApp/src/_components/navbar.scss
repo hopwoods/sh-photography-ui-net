@@ -1,0 +1,100 @@
+@import "../_custom.scss";
+
+/* Site Logo */
+a#SiteLogo {
+    background-image: url("./../images/SH-Photography-Camera.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 10vw;
+    width: 90vw;
+    display: inline-block;
+    position: relative;
+    left: 0rem;
+    top: 1rem; 
+}
+
+.nav-item a,
+.navbar-dark .navbar-nav .nav-link {
+    color: $white;
+    font-size: 1.1rem;
+}
+
+.nav-item a:hover,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: gray("500");
+}
+
+.navbar-toggler {
+    font-size: 1rem;
+}
+
+.navbar-toggler:focus {
+    outline: theme-color("dark-shades") thin solid;
+}
+
+
+/* Media Specific */
+
+@media (min-width: 992px) {
+    a#SiteLogo {
+        height: 6vw;
+        width: 40vw;
+        top: 0.25rem;
+    }
+}
+
+@include media-breakpoint-up(xs) {
+    html {
+        font-size: 1.4rem;
+    }
+
+    a#SiteLogo {
+        height: 14vw;
+        width: 88vw;
+        left: -0.25rem;
+    }
+}
+
+@include media-breakpoint-up(sm) {
+    html {
+        font-size: 1.3rem;
+    }
+
+    a#SiteLogo {
+        height: 14vw;
+        width: 88vw;
+        left: -0.25rem;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    html {
+        font-size: 1.2rem;
+    }
+
+    a#SiteLogo {
+        height: 14vw;
+        width: 97vw;
+        left: -1rem;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    html {
+        font-size: $base-font-size;
+    }
+
+    a#SiteLogo {
+        height: 6.5vw;
+        width: 40vw;
+        left: 0rem;
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 998px) {
+    a#SiteLogo {
+        height: 6.5vw;
+        width: 40vw;
+        top: 0.375rem;
+    }
+}

@@ -1,0 +1,86 @@
+@import "custom";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300|Raleway:300&display=swap");
+
+html {
+  font-size: $base-font-size;
+}
+
+/* Media Specific */
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  html {
+    font-size: $mobile-font-size;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 998px) {
+  html {
+    font-size: $base-font-size;
+  }
+}
+
+
+body {
+  background-color: $body-bg;
+  color: $body-color;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+h1 {
+  font-size: 1.6rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.4rem;
+}
+h4 {
+  font-size: 1.3rem;
+}
+h5 {
+  font-size: 1.2rem;
+}
+h6 {
+  font-size: 1.1rem;
+}
+
+a,
+a:hover,
+a:focus {
+  color: $white;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+
+/* Scrollbars */
+@include scrollbars(0.25em, theme-color("dark-accent"), #191919);
+
+#container {
+  min-height: 93vh;
+}
+
+#content {
+  min-height: 75%;
+}
+
+
+/* Footer */
+footer {
+  margin: 0;
+}
+
+
