@@ -10,7 +10,7 @@ const prod = {
   }
 };
 
-const config = process.env.REACT_APP_ENV === 'production'
+const config = process.env.NODE_ENV === 'production'
   ? prod
   : dev;
 
