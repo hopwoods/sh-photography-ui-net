@@ -1,6 +1,7 @@
-import axios from "axios";
+import axios from 'axios';
+import config from './../config.js';
 
 export default axios.create({
-  baseURL: `https://localhost:44398/api`,
-  responseType: "json"
+  baseURL: `${config.apiGateway.URL}`,
+  responseType: 'json'
 });

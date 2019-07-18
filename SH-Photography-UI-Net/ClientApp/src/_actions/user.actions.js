@@ -1,8 +1,8 @@
 /* eslint-disable no-unused-vars */
-import { userConstants } from "../_constants";
-import { userService } from "../_services";
-import { alertActions } from "./";
-import { history } from "../_helpers";
+import { userConstants } from '../_constants';
+import { userService } from '../_services';
+import { alertActions } from './';
+import { history } from '../_helpers';
 
 export const userActions = {
   login,
@@ -19,7 +19,7 @@ function login(username, password) {
     userService.login(username, password).then(
       user => {
         dispatch(success(user));
-        history.push("/adminhome");
+        history.push('/adminhome');
       },
       error => {
         dispatch(failure(error.toString()));
@@ -49,10 +49,10 @@ function register(user) {
     dispatch(request(user));
 
     userService.register(user).then(
-      user => {
+      _user => {
         dispatch(success());
-        history.push("/login");
-        dispatch(alertActions.success("Registration successful"));
+        history.push('/login');
+        dispatch(alertActions.success('Registration successful'));
       },
       error => {
         dispatch(failure(error.toString()));
