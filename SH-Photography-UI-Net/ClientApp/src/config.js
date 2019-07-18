@@ -6,7 +6,7 @@
 
 const prod = {
   apiGateway: {
-    URL: 'https://sh-photography.azurewebsites.net'
+    URL: 'https://sh-photography.azurewebsites.net/api'
   }
 };
 
