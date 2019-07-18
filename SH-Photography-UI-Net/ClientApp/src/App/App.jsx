@@ -1,22 +1,20 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
-import { Router, Route } from "react-router-dom";
-import { connect } from "react-redux";
-import { history } from "../_helpers";
-import { alertActions } from "../_actions";
-import { PrivateRoute } from "../_components";
-import { HomePage } from "../HomePage";
-import { AdminHomePage } from "../AdminHomePage";
-import { LoginPage } from "../LoginPage";
-import { RegisterPage } from "../RegisterPage";
-import { NavBar } from "../_components/NavBar";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { fab } from "@fortawesome/free-brands-svg-icons";
-import { fas } from "@fortawesome/free-solid-svg-icons";
+import React from 'react';
+import { Router, Route } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { history } from '../_helpers';
+import { alertActions } from '../_actions';
+import { PrivateRoute } from '../_components';
+import { HomePage } from '../HomePage';
+import { AdminHomePage } from '../AdminHomePage';
+import { LoginPage } from '../LoginPage';
+import { RegisterPage } from '../RegisterPage';
+import { NavBar } from '../_components/NavBar';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { fas } from '@fortawesome/free-solid-svg-icons';
 
 library.add(fab, fas);
-
-
 
 class App extends React.Component {
   constructor(props) {
