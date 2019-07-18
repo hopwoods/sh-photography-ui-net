@@ -1,0 +1,18 @@
+﻿[
+  {
+    "outputFile": "ClientApp/src/_components/navbar.module.css",
+    "inputFile": "ClientApp/src/_components/navbar.module.scss"
+  },
+  {
+    "outputFile": "ClientApp/src/scss/global.css",
+    "inputFile": "ClientApp/src/scss/global.scss"
+  },
+  {
+    "outputFile": "ClientApp/src/_components/navbar.css",
+    "inputFile": "ClientApp/src/_components/navbar.scss"
+  },
+  {
+    "outputFile": "ClientApp/src/_components/PhotoGallery.css",
+    "inputFile": "ClientApp/src/_components/PhotoGallery.scss"
+  }
+]

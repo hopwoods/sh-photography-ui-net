@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28803.156
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SH-Photography-UI-Net", "SH-Photography-UI-Net\SH-Photography-UI-Net.csproj", "{F3185187-4E3E-4361-ABF8-00D25328D931}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SH-Photography-UI-Net", "SH-Photography-UI-Net\SH-Photography-UI-Net.csproj", "{B05A4C46-7F45-40FB-ACA2-C4E282B7A50D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F3185187-4E3E-4361-ABF8-00D25328D931}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F3185187-4E3E-4361-ABF8-00D25328D931}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F3185187-4E3E-4361-ABF8-00D25328D931}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F3185187-4E3E-4361-ABF8-00D25328D931}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B05A4C46-7F45-40FB-ACA2-C4E282B7A50D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B05A4C46-7F45-40FB-ACA2-C4E282B7A50D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B05A4C46-7F45-40FB-ACA2-C4E282B7A50D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B05A4C46-7F45-40FB-ACA2-C4E282B7A50D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
