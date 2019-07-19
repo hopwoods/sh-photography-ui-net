@@ -1,9 +1,9 @@
 /* eslint-disable no-unused-vars */
-import React, { useState, useEffect } from "react";
-import Gallery from "react-photo-gallery";
-import Carousel, { Modal, ModalGateway } from "react-images";
-import { GetPhotoAlbum } from "./../_services/photos.service";
-import loader from "./../images/Infinity-1s-200px.svg";
+import React, { useState, useEffect } from 'react';
+import Gallery from 'react-photo-gallery';
+import Carousel, { Modal, ModalGateway } from 'react-images';
+import { GetPhotoAlbum } from './../_services/photos.service';
+import loader from './../images/Infinity-1s-200px.svg';
 
 export function PhotoGallery(props) {
   const [currentImage, setCurrentImage] = useState(0);
@@ -46,7 +46,7 @@ export function PhotoGallery(props) {
               currentIndex={currentImage}
               views={photos.map(x => ({
                 ...x,
-                srcset: x.srcSet,
+                srcSet: x.srcSet,
                 caption: x.title
               }))}
             />
