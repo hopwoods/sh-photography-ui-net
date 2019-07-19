@@ -3,6 +3,8 @@
 
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300|Raleway:300&display=swap");
 
+@import-normalize;
+
 html {
   font-size: $base-font-size;
 }

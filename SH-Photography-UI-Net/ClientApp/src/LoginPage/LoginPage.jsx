@@ -1,10 +1,10 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
-import { Link } from "react-router-dom";
-import { connect } from "react-redux";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { userActions } from "../_actions";
+import { userActions } from '../_actions';
 
 class LoginPage extends React.Component {
   constructor(props) {
@@ -14,8 +14,8 @@ class LoginPage extends React.Component {
     this.props.dispatch(userActions.logout());
 
     this.state = {
-      username: "",
-      password: "",
+      username: '',
+      password: '',
       submitted: false
     };
 
@@ -49,7 +49,7 @@ class LoginPage extends React.Component {
           <form name="form" onSubmit={this.handleSubmit}>
             <div
               className={
-                "form-group" + (submitted && !username ? " has-error" : "")
+                'form-group' + (submitted && !username ? ' has-error' : '')
               }
             >
               <label htmlFor="username">Username</label>
@@ -66,7 +66,7 @@ class LoginPage extends React.Component {
             </div>
             <div
               className={
-                "form-group" + (submitted && !password ? " has-error" : "")
+                'form-group' + (submitted && !password ? ' has-error' : '')
               }
             >
               <label htmlFor="password">Password</label>

@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
-import React, { Component } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "./navbar.css";
+import React, { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import './navbar.css';
 
 export class NavBar extends React.Component {
   render() {
@@ -56,7 +56,7 @@ export class NavBar extends React.Component {
                     target="_blank"
                     href="https://www.instagram.com/hopwoods/"
                   >
-                    <FontAwesomeIcon icon={["fab", "instagram"]} />
+                    <FontAwesomeIcon icon={['fab', 'instagram']} />
                   </a>
                   <a className="mr-1 ml-1" href="/login">
                     <FontAwesomeIcon icon="sign-in-alt" />
