@@ -47,7 +47,8 @@ export function PhotoGallery(props) {
               views={photos.map(x => ({
                 ...x,
                 srcSet: x.srcSet,
-                caption: x.title
+                caption: x.title,
+                alt: x.title
               }))}
             />
           </Modal>

@@ -51,14 +51,10 @@ export class NavBar extends React.Component {
               </li>
               <li className="nav-item">
                 <span className="nav-link">
-                  <a
-                    className="mr-1 ml-1"
-                    target="_blank"
-                    href="https://www.instagram.com/hopwoods/"
-                  >
+                  <a className="mr-1 ml-1" target="_blank" rel="noreferrer" href="https://www.instagram.com/hopwoods/" aria-label="My Instagram">
                     <FontAwesomeIcon icon={['fab', 'instagram']} />
                   </a>
-                  <a className="mr-1 ml-1" href="/login">
+                  <a className="mr-1 ml-1" href="/login" rel="noreferrer" aria-label="Login">
                     <FontAwesomeIcon icon="sign-in-alt" />
                   </a>
                 </span>
