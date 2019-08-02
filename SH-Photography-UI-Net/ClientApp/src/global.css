@@ -5,7 +5,7 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300|Raleway:300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300|Raleway:300&display=block");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -14928,8 +14928,18 @@ a.text-dark-shades:hover, a.text-dark-shades:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+@import-normalize;
 html {
   font-size: calc(1em + 0.25vw); }
+
+/* Media Specific */
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  html {
+    font-size: calc(2em + 1.5vw); } }
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 998px) {
+  html {
+    font-size: calc(1em + 0.25vw); } }
 
 body {
   background-color: #212121;
@@ -14991,22 +15001,6 @@ body {
 #content {
   min-height: 75%; }
 
-/* Gallery */
-.react-photo-gallery--gallery img {
-  border-radius: 5px; }
-
-.react-photo-gallery--gallery img:hover {
-  box-shadow: 0px 0px 8px #7f5045; }
-
 /* Footer */
 footer {
   margin: 0; }
-
-/* Media Specific */
-@media screen and (-webkit-min-device-pixel-ratio: 2) {
-  html {
-    font-size: calc(2em + 1.5vw); } }
-
-@media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 998px) {
-  html {
-    font-size: calc(1em + 0.25vw); } }

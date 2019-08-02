@@ -14,5 +14,13 @@
   {
     "outputFile": "ClientApp/src/_components/PhotoGallery.css",
     "inputFile": "ClientApp/src/_components/PhotoGallery.scss"
+  },
+  {
+    "outputFile": "ClientApp/src/global.css",
+    "inputFile": "ClientApp/src/global.scss"
+  },
+  {
+    "outputFile": "ClientApp/src/_custom.css",
+    "inputFile": "ClientApp/src/_custom.scss"
   }
 ]
