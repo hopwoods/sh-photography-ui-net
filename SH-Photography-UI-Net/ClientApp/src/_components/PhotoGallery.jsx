@@ -14,7 +14,8 @@ export function PhotoGallery(props)
         {
             src: loader,
             width: 1,
-            height: 1
+            height: 1,
+            alt: 'Loading Photos...'
         }
     ]);
 
