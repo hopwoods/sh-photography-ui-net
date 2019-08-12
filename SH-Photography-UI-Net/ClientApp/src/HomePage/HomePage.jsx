@@ -3,14 +3,17 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { PhotoGallery } from './../_components/PhotoGallery';
-class HomePage extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+import MetaTags from 'react-meta-tags';
 
+class HomePage extends React.Component {
   render() {
     return (
       <div className="col-md-12">
+        <MetaTags>
+          <title>Stuart Hopwood Photography Home</title>
+          <meta property="og:title" content="A Photography Portfolio and Client Portal."/>
+          <meta name="description" content="Featured photos from Stuart Hopwood Photography."/>
+        </MetaTags>
         <PhotoGallery
           margin={5}
           albumId={

@@ -24,12 +24,9 @@ export class NavBar extends React.Component {
           </div>
           <ul className="nav navbar-nav text-nowrap flex-row mx-sm-auto order-1 order-lg-3">
             <li className="nav-item">
-              <a
-                id="SiteLogo"
-                className="nav-link img-fluid"
-                title="Stuart Hopwood Photography Home"
-                href="/"
-              />
+              <a id="SiteLogo" className="nav-link img-fluid" title="Stuart Hopwood Photography Home" href="/" aria-label="Stuart Hopwood Photography Home">
+                <span className="sr-only">Stuart Hopwood Photography Home</span>
+                </a>
             </li>
             <button
               className="navbar-toggler w-100 ml-2 mr-2 mt-4"
@@ -51,10 +48,10 @@ export class NavBar extends React.Component {
               </li>
               <li className="nav-item">
                 <span className="nav-link">
-                  <a className="mr-1 ml-1" target="_blank" rel="noreferrer" href="https://www.instagram.com/hopwoods/" aria-label="My Instagram">
+                  <a className="mr-1 ml-1" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/hopwoods/" aria-label="My Instagram">
                     <FontAwesomeIcon icon={['fab', 'instagram']} />
                   </a>
-                  <a className="mr-1 ml-1" href="/login" rel="noreferrer" aria-label="Login">
+                  <a className="mr-1 ml-1" href="/login" rel="noopener noreferrer" aria-label="Login">
                     <FontAwesomeIcon icon="sign-in-alt" />
                   </a>
                 </span>
