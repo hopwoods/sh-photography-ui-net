@@ -21,7 +21,19 @@ export function PhotoGallery(props)
 
     const { width, height } = useWindowDimensions();
 
-    const photosArray = () => GetPhotoAlbum(props.albumId, width, height,).then(function(data)
+    function getReducedDimensions(originalWidth, originalHeight, multiplier)
+    {
+        const reducedWidth = originalWidth / multiplier;
+        const reducedHeight = originalHeight / multiplier;
+        return {
+            width,
+            height
+        };
+    }
+
+    const dimensions = getReducedDimensions(width, height, 1.25);
+ 
+    const photosArray = () => GetPhotoAlbum(props.albumId, dimensions.width, dimensions.height,).then(function(data)
     {
         setPhotos(data);
     });
@@ -55,11 +67,12 @@ export function PhotoGallery(props)
                             <Carousel
                                 currentIndex={currentImage}
                                 views={photos.map(x => ({
-                  ...x,
-                  srcSet: x.srcSet,
-                  caption: x.title,
-                  alt: x.title
-              }))}/>
+                                  ...x,
+                                  srcSet: x.srcSet,
+                                  caption: x.title,
+                                  alt: x.title,
+                                  title: x.title
+                            }))}/>
                         </Modal>
                     )
                     : null}
