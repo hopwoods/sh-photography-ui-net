@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-
+import MetaTags from 'react-meta-tags';
 import { userActions } from '../_actions';
 
 class AdminHomePage extends React.Component {
@@ -18,6 +18,11 @@ class AdminHomePage extends React.Component {
     const { user, users } = this.props;
     return (
       <div className="col-md-6">
+        <MetaTags>
+          <title>Stuart Hopwood Photography User Home</title>
+          <meta property="og:title" content="Stuart Hopwood Photography User Home"/>
+          <meta name="description" content="Home page for Stuart Hopwood Photography users."/>
+        </MetaTags>
         <h1>Hi {user.firstName}!</h1>
         <p>You're logged in with React!!</p>
         <h3>All registered users:</h3>
@@ -40,7 +45,7 @@ class AdminHomePage extends React.Component {
                 ) : (
                   <span>
                     {' '}
-                    - <a onClick={this.handleDeleteUser(user.id)}>Delete</a>
+                    - <button className="btn btn-link" onClick={this.handleDeleteUser(user.id)}>Delete</button>
                   </span>
                 )}
               </li>
