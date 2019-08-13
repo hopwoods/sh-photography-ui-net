@@ -27,6 +27,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="ClientApp\public\web.config" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="compilerconfig.json" />
   </ItemGroup>
 
