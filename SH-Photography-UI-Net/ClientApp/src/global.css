@@ -14935,7 +14935,7 @@ html {
 /* Media Specific */
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
   html {
-    font-size: calc(2em + 1.5vw); } }
+    font-size: calc(1em + 1.5vw); } }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 998px) {
   html {
@@ -14944,8 +14944,7 @@ html {
 body {
   background-color: #212121;
   color: #888888;
-  font-family: "Raleway", sans-serif;
-  font-size: 1rem; }
+  font-family: "Raleway", sans-serif; }
 
 h1,
 h2,
