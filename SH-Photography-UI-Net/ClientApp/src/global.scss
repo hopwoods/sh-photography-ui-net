@@ -1,4 +1,4 @@
-@import "custom";
+@import "_custom.scss";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300|Raleway:300&display=block");
@@ -28,7 +28,6 @@ body {
   background-color: $body-bg;
   color: $body-color;
   font-family: "Raleway", sans-serif;
-  font-size: 1rem;
 }
 
 h1,

@@ -7492,7 +7492,7 @@ a#SiteLogo {
     top: 0.25rem; } }
 
 html {
-  font-size: 1.4rem; }
+  font-size: 1.2rem; }
 
 a#SiteLogo {
   height: 14vw;
@@ -7501,7 +7501,7 @@ a#SiteLogo {
 
 @media (min-width: 576px) {
   html {
-    font-size: 1.3rem; }
+    font-size: 1.1rem; }
   a#SiteLogo {
     height: 14vw;
     width: 88vw;
@@ -7509,7 +7509,7 @@ a#SiteLogo {
 
 @media (min-width: 768px) {
   html {
-    font-size: 1.2rem; }
+    font-size: 1rem; }
   a#SiteLogo {
     height: 14vw;
     width: 97vw;
