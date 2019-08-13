@@ -20,20 +20,7 @@ export function PhotoGallery(props)
     ]);
 
     const { width, height } = useWindowDimensions();
-
-    function getReducedDimensions(originalWidth, originalHeight, multiplier)
-    {
-        const reducedWidth = originalWidth / multiplier;
-        const reducedHeight = originalHeight / multiplier;
-        return {
-            width,
-            height
-        };
-    }
-
-    const dimensions = getReducedDimensions(width, height, 1.25);
- 
-    const photosArray = () => GetPhotoAlbum(props.albumId, dimensions.width, dimensions.height,).then(function(data)
+    const photosArray = () => GetPhotoAlbum(props.albumId, width, height,).then(function(data)
     {
         setPhotos(data);
     });
@@ -42,7 +29,6 @@ export function PhotoGallery(props)
     useEffect(() =>
         {
             photosArray();
-            //console.log("Getting Photos Gallery - On Component Load - Runs Once Only");
         },
         []); //Use Empty arrray knowing that an empty set does never change, the effect will run only once.
 
@@ -62,23 +48,22 @@ export function PhotoGallery(props)
             <Gallery photos={photos} margin={props.margin} onClick={openLightbox}/>
             <ModalGateway>
                 {viewerIsOpen
-                ? (
-                <Modal onClose={closeLightbox}>
-                <Carousel
-                    currentIndex={currentImage}
-                    views={photos.map(x => ({
-                                  src: x.src,
-                                  width: x.width,
-                                  height: x.height,
-                                  srcSet: x.srcSet,
-                                  sizes: x.sizes,
-                                  caption: x.title,
-                                  alt: x.title
-                            }))}/>
+                    ? (
+                        <Modal onClose={closeLightbox}>
+                            <Carousel
+                                currentIndex={currentImage}
+                                views={photos.map(x => ({
+                                    src: x.src,
+                                    width: x.width,
+                                    height: x.height,
+                                    srcSet: x.srcSet,
+                                    sizes: x.sizes,
+                                    alt: x.title
+                                }))}/>
                         </Modal>
                     )
                     : null}
             </ModalGateway>
         </div>
-);
+    );
 }
