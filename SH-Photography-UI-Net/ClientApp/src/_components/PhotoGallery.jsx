@@ -62,21 +62,23 @@ export function PhotoGallery(props)
             <Gallery photos={photos} margin={props.margin} onClick={openLightbox}/>
             <ModalGateway>
                 {viewerIsOpen
-                    ? (
-                        <Modal onClose={closeLightbox}>
-                            <Carousel
-                                currentIndex={currentImage}
-                                views={photos.map(x => ({
-                                  ...x,
+                ? (
+                <Modal onClose={closeLightbox}>
+                <Carousel
+                    currentIndex={currentImage}
+                    views={photos.map(x => ({
+                                  src: x.src,
+                                  width: x.width,
+                                  height: x.height,
                                   srcSet: x.srcSet,
+                                  sizes: x.sizes,
                                   caption: x.title,
-                                  alt: x.title,
-                                  title: x.title
+                                  alt: x.title
                             }))}/>
                         </Modal>
                     )
                     : null}
             </ModalGateway>
         </div>
-    );
+);
 }
